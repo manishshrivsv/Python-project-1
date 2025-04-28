@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 df=pd.read_csv(r"C:\Users\91934\OneDrive\Desktop\Electric_Vehicle_Population_Data.csv")
 print(df.isnull().sum())
+#fyfthftyfytfh
 df["County"]=df["County"].fillna(df["County"].mode()[0])
 df["City"]=df["City"].fillna(df["City"].mode()[0])
 df["Postal Code"]=df["Postal Code"].fillna(df["Postal Code"].median())
